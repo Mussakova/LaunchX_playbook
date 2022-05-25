@@ -1,3 +1,6 @@
+const reader = require("./lib/utils/reader");
+const explorers = reader.readJsonFile("explorers.json");
+
 // Part 2: Get the quantity of explorers names in node
 const explorersInNode = explorers.filter((explorer) => explorer.mission == "node");
 //console.log(explorersInNode.length)
