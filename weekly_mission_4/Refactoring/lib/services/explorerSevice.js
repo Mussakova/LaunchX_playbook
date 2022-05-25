@@ -5,11 +5,14 @@ class explorerService{
     }
     
     static getAmountOfExplorersByMission(explorers, mission){
-
+        const amountExplorersByMission = explorers.filter((explorer)=> explorer.mission === mission)
+        return amountExplorersByMission.length
     }
 
     static getExplorersUsernamesByMission(explorers, mission){
-
+        const amountExplorersByMission = explorers.filter((explorer)=> explorer.mission === mission)
+        const explorersUsernamesByMission = amountExplorersByMission.map((explorer)=> explorer.githubUsername)
+        return explorersUsernamesByMission
     }
 }
 
