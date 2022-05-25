@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "nodemon api.js",
-    "start": "node api.js",
+    "test": "nodemon app.js",
+    "start": "node app.js",
     "lint": "eslint"
   },
   "author": "Hirepan",
