@@ -16,5 +16,11 @@ describe('Testing para FizzbuzzService',()=>{
         const filter3Modified = fizzbuzzService.applyValidationInExplorer(filter5[0])
 
         expect(filter3Modified).toMatch(/BUZZ/)
-        })
+        }),
+        test('3.. Crear propiedad objeto.trick = "FizzBUzz" si parameter%3 && parameter%5 === 0', ()=>{
+            const filter3y5 = explorers.filter((explorer)=> explorer.score %3 ===0 && explorer.score %5 ===0)
+            const filter3Modified = fizzbuzzService.applyValidationInExplorer(filter3y5[0])
+    
+            expect(filter3Modified).toMatch(/BUZZ/)
+            })
 })
